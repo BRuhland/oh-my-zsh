@@ -10,14 +10,14 @@ ruby_repo:
 ruby:
   pkg.installed:
     - named:
-      - ruby2.2
-      - ruby2.2-dev
+      - ruby2.3
+      - ruby2.3-dev
       - ruby-switch
     - require:
       - pkg: ruby_repo
 
 cmd.run:
-  - name: ruby-switch --set ruby2.2
+  - name: ruby-switch --set ruby2.3
   - require:
     - pkg: ruby
 
