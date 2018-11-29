@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Check if removed-but-not-purged
 test -x /usr/share/logwatch/scripts/logwatch.pl || exit 0
 
-/usr/share/logwatch --mailto bernd.ruhland@sap.com
+#execute
+/usr/sbin/logwatch --mailto bernd.ruhland@sap.com

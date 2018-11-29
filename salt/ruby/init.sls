@@ -16,10 +16,13 @@ ruby:
     - require:
       - pkg: ruby_repo
 
-cmd.run:
-  - name: ruby-switch --set ruby2.2
-  - require:
-    - pkg: ruby
+cmd:
+  cmd.run:
+    - name: "ruby-switch --set ruby2.2" 
+    - require:
+      - pkg: ruby
 
-gem.installed:
-  - name: lolcat
+gem:
+  gem.installed:
+    - name: 
+      - lolcat
